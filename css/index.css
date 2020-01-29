@@ -134,3 +134,80 @@ html,
 body {
   height: 100%;
 }
+/* Begin my changes here */
+body.container {
+  width: 100%;
+  padding: 2em;
+  background-color: #c995ce;
+}
+body.container header {
+  width: 100%;
+}
+body.container header nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+body.container header nav a {
+  padding: 20px;
+  margin: auto;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #8c41ec;
+}
+body.container header nav a:hover {
+  color: purple;
+}
+body.container section.first-section {
+  width: 100%;
+  padding: 5%;
+  background: #8c41ec;
+  border-radius: 20px;
+  padding-bottom: 50px;
+}
+body.container section.first-section img {
+  width: 49%;
+  border-radius: 50%;
+}
+body.container section.first-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5em;
+  color: #c995ce;
+}
+body.container section.first-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #c995ce;
+  color: #c995ce;
+}
+body.container section.first-section p {
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  color: #c995ce;
+}
+body.container section.first-section button {
+  background: #c995ce;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 150px;
+  height: 40px;
+  font-size: 1.5em;
+  color: #8c41ec;
+}
+body.container section.first-section button:hover {
+  background: #8c41ec;
+  color: #c995ce;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .container header nav a {
+    border-bottom: 1px solid #8c41ec;
+  }
+  .container header nav a:last-child {
+    border-bottom: none;
+  }
+}
