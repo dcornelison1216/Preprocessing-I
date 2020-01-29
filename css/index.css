@@ -147,10 +147,10 @@ body.container header nav {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: flex-end;
 }
 body.container header nav a {
   padding: 20px;
-  margin: auto;
   font-size: 1.5em;
   text-decoration: none;
   color: #8c41ec;
@@ -206,6 +206,7 @@ body.container section.first-section button:hover {
   }
   .container header nav a {
     border-bottom: 1px solid #8c41ec;
+    margin: auto;
   }
   .container header nav a:last-child {
     border-bottom: none;
