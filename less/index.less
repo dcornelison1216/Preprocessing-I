@@ -79,11 +79,24 @@ html, body {
 	border-color: rgb(111, 93, 136);
 }
 
-/* Desktop/default styling */
+/* Default styling for desktop */
 body.container {
 	width: 100%;
 	padding: 2em;
 	.pink-background;
+	h1 {
+		font-size: 3.5rem;
+		.pink-text;
+		.purple-background;
+		padding: 10px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+	}
+	h3 {
+		font-size: 1.7rem;
+		margin-bottom: 10px;
+		.purple-text;
+	}
 	header {
 		width: 100%;
 		nav {
@@ -104,18 +117,26 @@ body.container {
 	}
 	.first-section {
 		width: 100%;
-		padding: 5%;
+		padding: 10px;
 		.purple-background;
-		border-radius: 20px;
-		padding-bottom: 50px;
-		img {
-			width: 49%;
-			border-radius: 50%;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		display: flex;
+		div {
+			padding: 20px;
 		}
-		h1 {
-			font-size: 3.5rem;
-			margin-bottom: 0.5em;
-			.pink-text;
+		.img {
+			width: 49%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		img {
+			width: 100%;
+			border-radius: 50%;
+		}	
+		.intro {
+			width: 49%;
 		}
 		h2 {
 			font-size: 2rem;
@@ -128,20 +149,31 @@ body.container {
 			font-size: 1.25em;
 			margin-bottom: 1em;
 			.pink-text;
+			line-height: 1.3em;
 		}
-		button {
-			.pink-background;
-			border-radius: 5px;
-			border: 1px solid;
-			width: 150px;
-			height: 40px;
-			font-size: 1.5em;
-			.purple-text;
-		}
-		button:hover {
-			.purple-background;
-			.pink-text;
-			.pink-border;
+	}
+
+	.second-section {
+		div {
+			p {
+				font-size: 1.25em;
+				margin-bottom: 1em;
+				.purple-text;
+			}
+			button {
+				.pink-background;
+				border-radius: 5px;
+				border: 1px solid;
+				width: 150px;
+				height: 40px;
+				font-size: 1.5em;
+				.purple-text;
+			}
+			button:hover {
+				.purple-background;
+				.pink-text;
+				.pink-border;
+			}
 		}
 	}
 
@@ -153,30 +185,36 @@ body.container {
 		.purple-text;
 	}
 
-	.second-section {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 10px;
-		.great-things {
-			width: 49%;
+	.third-section {
+		margin-bottom: 30px;
+		.third-label {
 			display: flex;
-			flex-direction: column;
+			justify-content: space-around;
 			h3 {
-				font-size: 1.7rem;
-				margin-bottom: 10px;
-				.purple-text
+				width: 45%;
 			}
+		}
+		.lists {
+			display: flex;
+			justify-content: space-around;
 			ul {
+				width: 45%;
 				li {
 					padding: 10px;
 					border: 1px solid;
 					font-size: 1.3rem;
-					.purple-border;
-					.purple-text;
+					.pink-text;
+					.purple-background;
 					border-bottom: none;
 				}
-				li:last-child {
+				:last-child {
 					border-bottom: 1px solid;
+					border-bottom-left-radius: 20px;
+					border-bottom-right-radius: 20px;
+				}
+				:first-child {
+					border-top-left-radius: 20px;
+					border-top-right-radius: 20px;
 				}
 			}
 		}
@@ -186,11 +224,6 @@ body.container {
 			display: flex;
 			flex-direction: column;
 			margin-bottom: 10px;
-			h3 {
-				font-size: 1.7rem;
-				margin-bottom: 10px;
-				.purple-text;
-			}
 			ul {
 				li {
 					padding: 10px;
@@ -200,24 +233,64 @@ body.container {
 					.purple-text;
 					border-bottom: none;
 				}
-				li:last-child {
+				:first-child {
+					border-left: 1px solid black;
+				}
+				:last-child {
 					border-bottom: 1px solid;
 				}
 			}
 		}
-		.work-history {
-			h3 {
-				font-size: 1.7rem;
-				margin-bottom: 10px;
-				.purple-text;
+	}
+
+	.work-history {
+		margin-bottom: 30px;
+		h3 {
+			// border-bottom: 1px solid;
+			// .purple-border;
+			margin-bottom: 0;
+			padding-bottom: 10px;
+		}
+		.table {
+			border: 1px solid;
+			.purple-border;
+			.purple-background;
+			.pink-text;
+			border-radius: 20px;
+			ul {
+				display: flex;
+				justify-content: space-around;
+				font-size: 1.25rem;
+				li {
+					width: 24.5%;
+					padding: 10px;
+					flex-grow: 2;
+				}
+				:first-child {
+					width: 10%;
+				}
 			}
 		}
+		.headings {
+			font-weight: bold;
+		}
+	}
+
+	.footer {
+		.purple-background;
+		.pink-text;
+		border-radius: 20px;
+		font-size: 1.5em;
+		display: flex;
+		justify-content: center;
+		height: 3em;
+		padding-top: 1em;
 	}
 }
 
 /* Tablet responsive design */
 @media (max-width: 768px) {
-	
+
 }
 
 /* Mobile responsive design */
@@ -228,12 +301,24 @@ body.container {
 				flex-direction: column;
 				justify-content: space-around;
 				a {
-					border-bottom: 1px solid rgb(140, 65, 236);
+					border-bottom: 1px solid;
+					.purple-border;
 					margin: auto;
 				}
 				a:last-child {
 					border-bottom: none;
 				}
+			}
+		}
+		.first-section {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			img {
+				margin: auto;
+			}
+			h1 {
+				
 			}
 		}
 	}
