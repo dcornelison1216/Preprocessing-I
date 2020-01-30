@@ -135,10 +135,30 @@ body {
   height: 100%;
 }
 /* Begin my changes here */
+/* Mixins */
+.pink-background {
+  background-color: #b29bb4;
+}
+.purple-background {
+  background-color: #6f5d88;
+}
+.pink-text {
+  color: #b29bb4;
+}
+.purple-text {
+  color: #6f5d88;
+}
+.pink-border {
+  border-color: #b29bb4;
+}
+.purple-border {
+  border-color: #6f5d88;
+}
+/* Desktop/default styling */
 body.container {
   width: 100%;
   padding: 2em;
-  background-color: #c995ce;
+  background-color: #b29bb4;
 }
 body.container header {
   width: 100%;
@@ -153,52 +173,115 @@ body.container header nav a {
   padding: 20px;
   font-size: 1.5em;
   text-decoration: none;
-  color: #8c41ec;
+  color: #6f5d88;
 }
 body.container header nav a:hover {
   color: purple;
 }
-body.container section.first-section {
+body.container .first-section {
   width: 100%;
   padding: 5%;
-  background: #8c41ec;
+  background-color: #6f5d88;
   border-radius: 20px;
   padding-bottom: 50px;
 }
-body.container section.first-section img {
+body.container .first-section img {
   width: 49%;
   border-radius: 50%;
 }
-body.container section.first-section h1 {
+body.container .first-section h1 {
   font-size: 3.5rem;
   margin-bottom: 0.5em;
-  color: #c995ce;
+  color: #b29bb4;
 }
-body.container section.first-section h2 {
+body.container .first-section h2 {
   font-size: 2rem;
   margin-bottom: 0.5em;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #c995ce;
-  color: #c995ce;
+  border-bottom: 1px solid;
+  color: #b29bb4;
 }
-body.container section.first-section p {
+body.container .first-section p {
   font-size: 1.25em;
   margin-bottom: 1em;
-  color: #c995ce;
+  color: #b29bb4;
 }
-body.container section.first-section button {
-  background: #c995ce;
+body.container .first-section button {
+  background-color: #b29bb4;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid;
   width: 150px;
   height: 40px;
   font-size: 1.5em;
-  color: #8c41ec;
+  color: #6f5d88;
 }
-body.container section.first-section button:hover {
-  background: #8c41ec;
-  color: #c995ce;
+body.container .first-section button:hover {
+  background-color: #6f5d88;
+  color: #b29bb4;
+  border-color: #b29bb4;
 }
+body.container h2 {
+  font-size: 2rem;
+  margin: 0.5em 0;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid;
+  color: #6f5d88;
+}
+body.container .second-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+body.container .second-section .great-things {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+body.container .second-section .great-things h3 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: #6f5d88;
+}
+body.container .second-section .great-things ul li {
+  padding: 10px;
+  border: 1px solid;
+  font-size: 1.3rem;
+  border-color: #6f5d88;
+  color: #6f5d88;
+  border-bottom: none;
+}
+body.container .second-section .great-things ul li:last-child {
+  border-bottom: 1px solid;
+}
+body.container .second-section .improvements {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+body.container .second-section .improvements h3 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: #6f5d88;
+}
+body.container .second-section .improvements ul li {
+  padding: 10px;
+  border: 1px solid;
+  font-size: 1.3rem;
+  border-color: #6f5d88;
+  color: #6f5d88;
+  border-bottom: none;
+}
+body.container .second-section .improvements ul li:last-child {
+  border-bottom: 1px solid;
+}
+body.container .second-section .work-history h3 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: #6f5d88;
+}
+/* Tablet responsive design */
+/* Mobile responsive design */
 @media (max-width: 500px) {
   .container header nav {
     flex-direction: column;
