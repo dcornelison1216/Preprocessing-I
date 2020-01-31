@@ -92,6 +92,9 @@ body.container {
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
 	}
+	.about {
+		border-bottom: 1px solid;
+	}
 	h3 {
 		font-size: 1.7rem;
 		margin-bottom: 10px;
@@ -111,7 +114,9 @@ body.container {
 				.purple-text;
 			}
 			a:hover {
-				color: purple;
+				.pink-text;
+				.purple-background;
+				border-radius: 20px;
 			}
 		}
 	}
@@ -154,13 +159,14 @@ body.container {
 	}
 
 	.second-section {
+		margin-bottom: 25px;
 		div {
 			p {
 				font-size: 1.25em;
-				margin-bottom: 1em;
+				margin-bottom: 2em;
 				.purple-text;
 			}
-			button {
+			a {
 				.pink-background;
 				border-radius: 5px;
 				border: 1px solid;
@@ -168,8 +174,11 @@ body.container {
 				height: 40px;
 				font-size: 1.5em;
 				.purple-text;
+				padding: 10px;
+				text-decoration: none;
+				margin-top: 10px;
 			}
-			button:hover {
+			a:hover {
 				.purple-background;
 				.pink-text;
 				.pink-border;
@@ -286,6 +295,50 @@ body.container {
 		height: 3em;
 		padding-top: 1em;
 	}
+
+	/* Contact form styling */
+	.form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 50px;
+		input {
+			width: 75%;
+			height: 30px;
+			font-size: 1.5em;
+			border-radius: 20px;
+			padding-left: 20px;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		textarea {
+			width: 75%;
+			height: 5em;
+			font-size: 1.5em;
+			border-radius: 20px;
+			padding-left: 20px;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.send-message {
+			.pink-background;
+			.purple-text;
+			text-decoration: none;
+			font-size: 1.7em;
+			padding: 10px;
+			border-radius: 20px;
+		}
+		.send-message:hover {
+			.purple-background;
+			.pink-text;
+			font-size: 0px;
+		}
+		.send-message:hover:after {
+			content: attr(data-hover);
+			font-size: 1.7rem;
+		}
+	}
 }
 
 /* Tablet responsive design */
@@ -312,14 +365,7 @@ body.container {
 		}
 		.first-section {
 			display: flex;
-			flex-direction: column;
 			justify-content: center;
-			img {
-				margin: auto;
-			}
-			h1 {
-				
-			}
 		}
 	}
 }

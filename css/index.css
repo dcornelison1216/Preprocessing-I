@@ -159,6 +159,7 @@ body.container {
   width: 100%;
   padding: 2em;
   background-color: #b29bb4;
+  /* Contact form styling */
 }
 body.container h1 {
   font-size: 3.5rem;
@@ -167,6 +168,9 @@ body.container h1 {
   padding: 10px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+body.container .about {
+  border-bottom: 1px solid;
 }
 body.container h3 {
   font-size: 1.7rem;
@@ -189,7 +193,9 @@ body.container header nav a {
   color: #6f5d88;
 }
 body.container header nav a:hover {
-  color: purple;
+  color: #b29bb4;
+  background-color: #6f5d88;
+  border-radius: 20px;
 }
 body.container .first-section {
   width: 100%;
@@ -228,12 +234,15 @@ body.container .first-section p {
   color: #b29bb4;
   line-height: 1.3em;
 }
+body.container .second-section {
+  margin-bottom: 25px;
+}
 body.container .second-section div p {
   font-size: 1.25em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   color: #6f5d88;
 }
-body.container .second-section div button {
+body.container .second-section div a {
   background-color: #b29bb4;
   border-radius: 5px;
   border: 1px solid;
@@ -241,8 +250,11 @@ body.container .second-section div button {
   height: 40px;
   font-size: 1.5em;
   color: #6f5d88;
+  padding: 10px;
+  text-decoration: none;
+  margin-top: 10px;
 }
-body.container .second-section div button:hover {
+body.container .second-section div a:hover {
   background-color: #6f5d88;
   color: #b29bb4;
   border-color: #b29bb4;
@@ -348,6 +360,48 @@ body.container .footer {
   height: 3em;
   padding-top: 1em;
 }
+body.container .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+body.container .form input {
+  width: 75%;
+  height: 30px;
+  font-size: 1.5em;
+  border-radius: 20px;
+  padding-left: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+body.container .form textarea {
+  width: 75%;
+  height: 5em;
+  font-size: 1.5em;
+  border-radius: 20px;
+  padding-left: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+body.container .form .send-message {
+  background-color: #b29bb4;
+  color: #6f5d88;
+  text-decoration: none;
+  font-size: 1.7em;
+  padding: 10px;
+  border-radius: 20px;
+}
+body.container .form .send-message:hover {
+  background-color: #6f5d88;
+  color: #b29bb4;
+  font-size: 0px;
+}
+body.container .form .send-message:hover:after {
+  content: attr(data-hover);
+  font-size: 1.7rem;
+}
 /* Tablet responsive design */
 /* Mobile responsive design */
 @media (max-width: 500px) {
@@ -365,10 +419,6 @@ body.container .footer {
   }
   .container .first-section {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-  }
-  .container .first-section img {
-    margin: auto;
   }
 }
