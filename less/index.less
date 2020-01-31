@@ -78,9 +78,12 @@ html, body {
 .purple-border {
 	border-color: rgb(111, 93, 136);
 }
+.curved-corners {
+	border-radius: 20px;
+}
 
 /* Default styling for desktop */
-body.container {
+.container {
 	width: 100%;
 	padding: 2em;
 	.pink-background;
@@ -109,14 +112,14 @@ body.container {
 			justify-content: flex-end;
 			a {
 				padding: 20px;
-				font-size: 1.5em;
+				font-size: 1.5rem;
 				text-decoration: none;
 				.purple-text;
 			}
 			a:hover {
 				.pink-text;
 				.purple-background;
-				border-radius: 20px;
+				.curved-corners;
 			}
 		}
 	}
@@ -145,16 +148,16 @@ body.container {
 		}
 		h2 {
 			font-size: 2rem;
-			margin-bottom: 0.5em;
-			padding-bottom: 0.5em;
+			margin-bottom: 0.5rem;
+			padding-bottom: 0.5rem;
 			border-bottom: 1px solid;
 			.pink-text;
 		}
 		p {
-			font-size: 1.25em;
-			margin-bottom: 1em;
+			font-size: 1.4rem;
+			margin-bottom: 1rem;
 			.pink-text;
-			line-height: 1.3em;
+			line-height: 1.5rem;
 		}
 	}
 
@@ -162,17 +165,17 @@ body.container {
 		margin-bottom: 25px;
 		div {
 			p {
-				font-size: 1.25em;
-				margin-bottom: 2em;
+				font-size: 1.4rem;
+				margin-bottom: 2rem;
 				.purple-text;
 			}
 			a {
 				.pink-background;
-				border-radius: 5px;
+				.curved-corners;
 				border: 1px solid;
 				width: 150px;
 				height: 40px;
-				font-size: 1.5em;
+				font-size: 1.5rem;
 				.purple-text;
 				padding: 10px;
 				text-decoration: none;
@@ -188,8 +191,8 @@ body.container {
 
 	h2{
 		font-size: 2rem;
-		margin: 0.5em 0;
-		padding-bottom: 0.5em;
+		margin: 0.7rem 0;
+		padding-bottom: 0.7rem;
 		border-bottom: 1px solid;
 		.purple-text;
 	}
@@ -265,7 +268,7 @@ body.container {
 			.purple-border;
 			.purple-background;
 			.pink-text;
-			border-radius: 20px;
+			.curved-corners;
 			ul {
 				display: flex;
 				justify-content: space-around;
@@ -288,12 +291,12 @@ body.container {
 	.footer {
 		.purple-background;
 		.pink-text;
-		border-radius: 20px;
-		font-size: 1.5em;
+		.curved-corners;
+		font-size: 1.7rem;
 		display: flex;
 		justify-content: center;
-		height: 3em;
-		padding-top: 1em;
+		height: 6rem;
+		padding-top: 2.3rem;
 	}
 
 	/* Contact form styling */
@@ -306,17 +309,17 @@ body.container {
 		input {
 			width: 75%;
 			height: 30px;
-			font-size: 1.5em;
-			border-radius: 20px;
+			font-size: 1.5rem;
+			.curved-corners;
 			padding-left: 20px;
 			text-align: center;
 			margin-bottom: 20px;
 		}
 		textarea {
 			width: 75%;
-			height: 5em;
-			font-size: 1.5em;
-			border-radius: 20px;
+			height: 10rem;
+			font-size: 1.5rem;
+			.curved-corners;
 			padding-left: 20px;
 			text-align: center;
 			margin-bottom: 20px;
@@ -325,9 +328,9 @@ body.container {
 			.pink-background;
 			.purple-text;
 			text-decoration: none;
-			font-size: 1.7em;
+			font-size: 1.7rem;
 			padding: 10px;
-			border-radius: 20px;
+			.curved-corners;
 		}
 		.send-message:hover {
 			.purple-background;
@@ -366,6 +369,9 @@ body.container {
 		.first-section {
 			display: flex;
 			justify-content: center;
+		}
+		h1 {
+			text-align: center;
 		}
 	}
 }

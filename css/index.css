@@ -154,14 +154,17 @@ body {
 .purple-border {
   border-color: #6f5d88;
 }
+.curved-corners {
+  border-radius: 20px;
+}
 /* Default styling for desktop */
-body.container {
+.container {
   width: 100%;
   padding: 2em;
   background-color: #b29bb4;
   /* Contact form styling */
 }
-body.container h1 {
+.container h1 {
   font-size: 3.5rem;
   color: #b29bb4;
   background-color: #6f5d88;
@@ -169,35 +172,35 @@ body.container h1 {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-body.container .about {
+.container .about {
   border-bottom: 1px solid;
 }
-body.container h3 {
+.container h3 {
   font-size: 1.7rem;
   margin-bottom: 10px;
   color: #6f5d88;
 }
-body.container header {
+.container header {
   width: 100%;
 }
-body.container header nav {
+.container header nav {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: flex-end;
 }
-body.container header nav a {
+.container header nav a {
   padding: 20px;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-decoration: none;
   color: #6f5d88;
 }
-body.container header nav a:hover {
+.container header nav a:hover {
   color: #b29bb4;
   background-color: #6f5d88;
   border-radius: 20px;
 }
-body.container .first-section {
+.container .first-section {
   width: 100%;
   padding: 10px;
   background-color: #6f5d88;
@@ -205,85 +208,85 @@ body.container .first-section {
   border-bottom-right-radius: 20px;
   display: flex;
 }
-body.container .first-section div {
+.container .first-section div {
   padding: 20px;
 }
-body.container .first-section .img {
+.container .first-section .img {
   width: 49%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body.container .first-section img {
+.container .first-section img {
   width: 100%;
   border-radius: 50%;
 }
-body.container .first-section .intro {
+.container .first-section .intro {
   width: 49%;
 }
-body.container .first-section h2 {
+.container .first-section h2 {
   font-size: 2rem;
-  margin-bottom: 0.5em;
-  padding-bottom: 0.5em;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid;
   color: #b29bb4;
 }
-body.container .first-section p {
-  font-size: 1.25em;
-  margin-bottom: 1em;
+.container .first-section p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
   color: #b29bb4;
-  line-height: 1.3em;
+  line-height: 1.5rem;
 }
-body.container .second-section {
+.container .second-section {
   margin-bottom: 25px;
 }
-body.container .second-section div p {
-  font-size: 1.25em;
-  margin-bottom: 2em;
+.container .second-section div p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
   color: #6f5d88;
 }
-body.container .second-section div a {
+.container .second-section div a {
   background-color: #b29bb4;
-  border-radius: 5px;
+  border-radius: 20px;
   border: 1px solid;
   width: 150px;
   height: 40px;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #6f5d88;
   padding: 10px;
   text-decoration: none;
   margin-top: 10px;
 }
-body.container .second-section div a:hover {
+.container .second-section div a:hover {
   background-color: #6f5d88;
   color: #b29bb4;
   border-color: #b29bb4;
 }
-body.container h2 {
+.container h2 {
   font-size: 2rem;
-  margin: 0.5em 0;
-  padding-bottom: 0.5em;
+  margin: 0.7rem 0;
+  padding-bottom: 0.7rem;
   border-bottom: 1px solid;
   color: #6f5d88;
 }
-body.container .third-section {
+.container .third-section {
   margin-bottom: 30px;
 }
-body.container .third-section .third-label {
+.container .third-section .third-label {
   display: flex;
   justify-content: space-around;
 }
-body.container .third-section .third-label h3 {
+.container .third-section .third-label h3 {
   width: 45%;
 }
-body.container .third-section .lists {
+.container .third-section .lists {
   display: flex;
   justify-content: space-around;
 }
-body.container .third-section .lists ul {
+.container .third-section .lists ul {
   width: 45%;
 }
-body.container .third-section .lists ul li {
+.container .third-section .lists ul li {
   padding: 10px;
   border: 1px solid;
   font-size: 1.3rem;
@@ -291,22 +294,22 @@ body.container .third-section .lists ul li {
   background-color: #6f5d88;
   border-bottom: none;
 }
-body.container .third-section .lists ul :last-child {
+.container .third-section .lists ul :last-child {
   border-bottom: 1px solid;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-body.container .third-section .lists ul :first-child {
+.container .third-section .lists ul :first-child {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-body.container .third-section .improvements {
+.container .third-section .improvements {
   width: 49%;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-body.container .third-section .improvements ul li {
+.container .third-section .improvements ul li {
   padding: 10px;
   border: 1px solid;
   font-size: 1.3rem;
@@ -314,91 +317,91 @@ body.container .third-section .improvements ul li {
   color: #6f5d88;
   border-bottom: none;
 }
-body.container .third-section .improvements ul :first-child {
+.container .third-section .improvements ul :first-child {
   border-left: 1px solid black;
 }
-body.container .third-section .improvements ul :last-child {
+.container .third-section .improvements ul :last-child {
   border-bottom: 1px solid;
 }
-body.container .work-history {
+.container .work-history {
   margin-bottom: 30px;
 }
-body.container .work-history h3 {
+.container .work-history h3 {
   margin-bottom: 0;
   padding-bottom: 10px;
 }
-body.container .work-history .table {
+.container .work-history .table {
   border: 1px solid;
   border-color: #6f5d88;
   background-color: #6f5d88;
   color: #b29bb4;
   border-radius: 20px;
 }
-body.container .work-history .table ul {
+.container .work-history .table ul {
   display: flex;
   justify-content: space-around;
   font-size: 1.25rem;
 }
-body.container .work-history .table ul li {
+.container .work-history .table ul li {
   width: 24.5%;
   padding: 10px;
   flex-grow: 2;
 }
-body.container .work-history .table ul :first-child {
+.container .work-history .table ul :first-child {
   width: 10%;
 }
-body.container .work-history .headings {
+.container .work-history .headings {
   font-weight: bold;
 }
-body.container .footer {
+.container .footer {
   background-color: #6f5d88;
   color: #b29bb4;
   border-radius: 20px;
-  font-size: 1.5em;
+  font-size: 1.7rem;
   display: flex;
   justify-content: center;
-  height: 3em;
-  padding-top: 1em;
+  height: 6rem;
+  padding-top: 2.3rem;
 }
-body.container .form {
+.container .form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   margin-bottom: 50px;
 }
-body.container .form input {
+.container .form input {
   width: 75%;
   height: 30px;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   border-radius: 20px;
   padding-left: 20px;
   text-align: center;
   margin-bottom: 20px;
 }
-body.container .form textarea {
+.container .form textarea {
   width: 75%;
-  height: 5em;
-  font-size: 1.5em;
+  height: 10rem;
+  font-size: 1.5rem;
   border-radius: 20px;
   padding-left: 20px;
   text-align: center;
   margin-bottom: 20px;
 }
-body.container .form .send-message {
+.container .form .send-message {
   background-color: #b29bb4;
   color: #6f5d88;
   text-decoration: none;
-  font-size: 1.7em;
+  font-size: 1.7rem;
   padding: 10px;
   border-radius: 20px;
 }
-body.container .form .send-message:hover {
+.container .form .send-message:hover {
   background-color: #6f5d88;
   color: #b29bb4;
   font-size: 0px;
 }
-body.container .form .send-message:hover:after {
+.container .form .send-message:hover:after {
   content: attr(data-hover);
   font-size: 1.7rem;
 }
@@ -420,5 +423,8 @@ body.container .form .send-message:hover:after {
   .container .first-section {
     display: flex;
     justify-content: center;
+  }
+  .container h1 {
+    text-align: center;
   }
 }
