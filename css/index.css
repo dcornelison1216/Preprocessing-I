@@ -163,6 +163,7 @@ body {
   padding: 2em;
   background-color: #b29bb4;
   /* Contact form styling */
+  /* Contact page */
 }
 .container h1 {
   font-size: 3.5rem;
@@ -405,7 +406,44 @@ body {
   content: attr(data-hover);
   font-size: 1.7rem;
 }
+.container .email-link {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+.container .email-link p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: #6f5d88;
+  padding-top: 2rem;
+  margin: auto;
+  margin-bottom: 20rem;
+}
+.container .email-link a {
+  background-color: #b29bb4;
+  border-radius: 20px;
+  border: 1px solid;
+  padding: 1.5rem 3rem;
+  padding-bottom: 3rem;
+  width: 150px;
+  height: 40px;
+  font-size: 1.5rem;
+  color: #6f5d88;
+  text-decoration: none;
+  margin: auto;
+  margin-top: 10rem;
+}
+.container .email-link a:hover {
+  background-color: #6f5d88;
+  color: #b29bb4;
+  border-color: #b29bb4;
+}
 /* Tablet responsive design */
+@media (max-width: 740px) {
+  .lists ul li {
+    height: 4rem;
+  }
+}
 /* Mobile responsive design */
 @media (max-width: 500px) {
   .container header nav {
@@ -426,5 +464,10 @@ body {
   }
   .container h1 {
     text-align: center;
+  }
+}
+@media (max-width: 451px) {
+  .lists ul li {
+    height: 5.5rem;
   }
 }

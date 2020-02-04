@@ -115,13 +115,14 @@ html, body {
 				font-size: 1.5rem;
 				text-decoration: none;
 				.purple-text;
-			}
-			a:hover {
-				.pink-text;
-				.purple-background;
-				.curved-corners;
+				&:hover {
+					.pink-text;
+					.purple-background;
+					.curved-corners;
+				}
 			}
 		}
+
 	}
 	.first-section {
 		width: 100%;
@@ -180,11 +181,12 @@ html, body {
 				padding: 10px;
 				text-decoration: none;
 				margin-top: 10px;
+				&:hover {
+					.purple-background;
+					.pink-text;
+					.pink-border;
 			}
-			a:hover {
-				.purple-background;
-				.pink-text;
-				.pink-border;
+
 			}
 		}
 	}
@@ -342,12 +344,53 @@ html, body {
 			font-size: 1.7rem;
 		}
 	}
+
+	/* Contact page */
+	.email-link {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 1.5rem;
+		p {
+			font-size: 1.4rem;
+			margin-bottom: 2rem;
+			.purple-text;
+			padding-top: 2rem;
+			margin: auto;
+			margin-bottom: 20rem;
+		}
+		a {
+			.pink-background;
+			.curved-corners;
+			border: 1px solid;
+			padding: 1.5rem 3rem;
+			padding-bottom: 3rem;
+			width: 150px;
+			height: 40px;
+			font-size: 1.5rem;
+			.purple-text;
+			text-decoration: none;
+			margin: auto;
+			margin-top: 10rem;
+			&:hover {
+				.purple-background;
+				.pink-text;
+				.pink-border;
+			}
+		}
+	}
 }
 
 /* Tablet responsive design */
-@media (max-width: 768px) {
-
+@media (max-width: 740px) {
+	.lists {
+		ul {
+			li {
+				height: 4rem;
+			}
+		}
+	}
 }
+
 
 /* Mobile responsive design */
 @media (max-width: 500px) {
@@ -372,6 +415,15 @@ html, body {
 		}
 		h1 {
 			text-align: center;
+		}
+	}
+}
+@media(max-width: 451px) {
+	.lists {
+		ul {
+			li {
+				height: 5.5rem;
+			}
 		}
 	}
 }
