@@ -57,3 +57,373 @@ html, body {
     height: 100%;
 }
 
+/* Begin my changes here */
+
+/* Mixins */
+.pink-background {
+	background-color: rgb(178, 155, 180);
+}
+.purple-background {
+	background-color: rgb(111, 93, 136);
+}
+.pink-text {
+	color: rgb(178, 155, 180);
+}
+.purple-text {
+	color: rgb(111, 93, 136);
+}
+.pink-border {
+	border-color: rgb(178, 155, 180);
+}
+.purple-border {
+	border-color: rgb(111, 93, 136);
+}
+.curved-corners {
+	border-radius: 20px;
+}
+
+/* Default styling for desktop */
+.container {
+	width: 100%;
+	padding: 2em;
+	.pink-background;
+	h1 {
+		font-size: 3.5rem;
+		.pink-text;
+		.purple-background;
+		padding: 10px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+	}
+	.about {
+		border-bottom: 1px solid;
+	}
+	h3 {
+		font-size: 1.7rem;
+		margin-bottom: 10px;
+		.purple-text;
+	}
+	header {
+		width: 100%;
+		nav {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			justify-content: flex-end;
+			a {
+				padding: 20px;
+				font-size: 1.5rem;
+				text-decoration: none;
+				.purple-text;
+				&:hover {
+					.pink-text;
+					.purple-background;
+					.curved-corners;
+				}
+			}
+		}
+
+	}
+	.first-section {
+		width: 100%;
+		padding: 10px;
+		.purple-background;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		display: flex;
+		div {
+			padding: 20px;
+		}
+		.img {
+			width: 49%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		img {
+			width: 100%;
+			border-radius: 50%;
+		}	
+		.intro {
+			width: 49%;
+		}
+		h2 {
+			font-size: 2rem;
+			margin-bottom: 0.5rem;
+			padding-bottom: 0.5rem;
+			border-bottom: 1px solid;
+			.pink-text;
+		}
+		p {
+			font-size: 1.4rem;
+			margin-bottom: 1rem;
+			.pink-text;
+			line-height: 1.5rem;
+		}
+	}
+
+	.second-section {
+		margin-bottom: 25px;
+		div {
+			p {
+				font-size: 1.4rem;
+				margin-bottom: 2rem;
+				.purple-text;
+			}
+			a {
+				.pink-background;
+				.curved-corners;
+				border: 1px solid;
+				width: 150px;
+				height: 40px;
+				font-size: 1.5rem;
+				.purple-text;
+				padding: 10px;
+				text-decoration: none;
+				margin-top: 10px;
+				&:hover {
+					.purple-background;
+					.pink-text;
+					.pink-border;
+			}
+
+			}
+		}
+	}
+
+	h2{
+		font-size: 2rem;
+		margin: 0.7rem 0;
+		padding-bottom: 0.7rem;
+		border-bottom: 1px solid;
+		.purple-text;
+	}
+
+	.third-section {
+		margin-bottom: 30px;
+		.third-label {
+			display: flex;
+			justify-content: space-around;
+			h3 {
+				width: 45%;
+			}
+		}
+		.lists {
+			display: flex;
+			justify-content: space-around;
+			ul {
+				width: 45%;
+				li {
+					padding: 10px;
+					border: 1px solid;
+					font-size: 1.3rem;
+					.pink-text;
+					.purple-background;
+					border-bottom: none;
+				}
+				:last-child {
+					border-bottom: 1px solid;
+					border-bottom-left-radius: 20px;
+					border-bottom-right-radius: 20px;
+				}
+				:first-child {
+					border-top-left-radius: 20px;
+					border-top-right-radius: 20px;
+				}
+			}
+		}
+
+		.improvements {
+			width: 49%;
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 10px;
+			ul {
+				li {
+					padding: 10px;
+					border: 1px solid;
+					font-size: 1.3rem;
+					.purple-border;
+					.purple-text;
+					border-bottom: none;
+				}
+				:first-child {
+					border-left: 1px solid black;
+				}
+				:last-child {
+					border-bottom: 1px solid;
+				}
+			}
+		}
+	}
+
+	.work-history {
+		margin-bottom: 30px;
+		h3 {
+			// border-bottom: 1px solid;
+			// .purple-border;
+			margin-bottom: 0;
+			padding-bottom: 10px;
+		}
+		.table {
+			border: 1px solid;
+			.purple-border;
+			.purple-background;
+			.pink-text;
+			.curved-corners;
+			ul {
+				display: flex;
+				justify-content: space-around;
+				font-size: 1.25rem;
+				li {
+					width: 24.5%;
+					padding: 10px;
+					flex-grow: 2;
+				}
+				:first-child {
+					width: 10%;
+				}
+			}
+		}
+		.headings {
+			font-weight: bold;
+		}
+	}
+
+	.footer {
+		.purple-background;
+		.pink-text;
+		.curved-corners;
+		font-size: 1.7rem;
+		display: flex;
+		justify-content: center;
+		height: 6rem;
+		padding-top: 2.3rem;
+	}
+
+	/* Contact form styling */
+	.form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 50px;
+		input {
+			width: 75%;
+			height: 30px;
+			font-size: 1.5rem;
+			.curved-corners;
+			padding-left: 20px;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		textarea {
+			width: 75%;
+			height: 10rem;
+			font-size: 1.5rem;
+			.curved-corners;
+			padding-left: 20px;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.send-message {
+			.pink-background;
+			.purple-text;
+			text-decoration: none;
+			font-size: 1.7rem;
+			padding: 10px;
+			.curved-corners;
+		}
+		.send-message:hover {
+			.purple-background;
+			.pink-text;
+			font-size: 0px;
+		}
+		.send-message:hover:after {
+			content: attr(data-hover);
+			font-size: 1.7rem;
+		}
+	}
+
+	/* Contact page */
+	.email-link {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 1.5rem;
+		p {
+			font-size: 1.4rem;
+			margin-bottom: 2rem;
+			.purple-text;
+			padding-top: 2rem;
+			margin: auto;
+			margin-bottom: 20rem;
+		}
+		a {
+			.pink-background;
+			.curved-corners;
+			border: 1px solid;
+			padding: 1.5rem 3rem;
+			padding-bottom: 3rem;
+			width: 150px;
+			height: 40px;
+			font-size: 1.5rem;
+			.purple-text;
+			text-decoration: none;
+			margin: auto;
+			margin-top: 10rem;
+			&:hover {
+				.purple-background;
+				.pink-text;
+				.pink-border;
+			}
+		}
+	}
+}
+
+/* Tablet responsive design */
+@media (max-width: 740px) {
+	.lists {
+		ul {
+			li {
+				height: 4rem;
+			}
+		}
+	}
+}
+
+
+/* Mobile responsive design */
+@media (max-width: 500px) {
+	.container {
+		header {
+			nav {
+				flex-direction: column;
+				justify-content: space-around;
+				a {
+					border-bottom: 1px solid;
+					.purple-border;
+					margin: auto;
+				}
+				a:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+		.first-section {
+			display: flex;
+			justify-content: center;
+		}
+		h1 {
+			text-align: center;
+		}
+	}
+}
+@media(max-width: 451px) {
+	.lists {
+		ul {
+			li {
+				height: 5.5rem;
+			}
+		}
+	}
+}
